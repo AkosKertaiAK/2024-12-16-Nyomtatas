@@ -87,6 +87,24 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="nyomtatas.js"></script>
+<script>
+  function kalkulal() {
+      const szelesseg = parseFloat(document.getElementById('szelesseg').value);
+      const magassag = parseFloat(document.getElementById('magassag').value); 
+      const papir = parseFloat(document.getElementById('papirtipus').value);
+  
+      let terulet = Math.round((szelesseg * magassag) / 10000); 
+      let koltseg = terulet * papir; 
+  
+      document.getElementById('terulet').innerText = terulet; 
+      document.getElementById('papir').innerText = papir; 
+      document.getElementById('koltseg').innerText = koltseg;
+  
+      document.getElementById('valasz').style.visibility = "visible"; 
+  }
+  
+  document.getElementById('kalkulalGomb').addEventListener('click', kalkulal);
+  </script>
 </body>
 
 </html>
