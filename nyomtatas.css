@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Zen+Dots&display=swap');
+
 body{
   color: #293647;
 }
@@ -9,12 +11,12 @@ body{
   background-image: url(drukletters.jpg);
 }
 
-.bg-fej h1{
+.bg-fej h1 {
   color: white;
   font-size: 500%;
-  text-transform: uppercase;
-  text-decoration: underline overline;
-  font-weight: bold;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Zen Dots", serif;
 }
 
 .container{
