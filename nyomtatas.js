@@ -1,18 +1,18 @@
 function kalkulal() {
     
-    const szelesseg = parseFloat(document.getElementById('v').value);
-    const magassag = parseFloat(document.getElementById('magassag').value); 
-    const papir = parseFloat(document.getElementById('papirtipus').value);
+    const szelesseg = document.getElementById('szelesseg').value;
+    const magassag=document.getElementById('magassag').value;
+    const papir=document.getElementById('papirtipus').value;
 
 
     let terulet = Math.round((szelesseg * magassag) / 10000); 
-    let koltseg = terulet * papir; 
+    let koltseg = terulet * papir;
 
-    document.getElementById('terulet').innerText = terulet; 
-    document.getElementById('papir').innerText = papir; 
-    document.getElementById('koltseg').innerText = koltseg;
-    document.getElementById('kalkulalGomb').addEventListener('click', kalkulal);
+
+
+    document.getElementById('terulet').innerHTML = terulet; 
+    document.getElementById('papir').innerHTML = papir; 
+    document.getElementById('koltseg').innerHTML = koltseg ;
 
     document.getElementById('valasz').style.visibility = "visible"; 
 }
-
